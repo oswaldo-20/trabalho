@@ -10,15 +10,13 @@ using namespace std;
 void firstFit(int blockSize[], int m,
               int processSize[], int n)
 {
-    // Stores block id of the
-    // block allocated to a process
+
     int allocation[n];
 
-    // Initially no block is assigned to any process
+    
     memset(allocation, -1, sizeof(allocation));
 
-    // pick each process and find suitable blocks
-    // according to its size ad assign to it
+
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < m; j++)
